@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Unsere Services{% endblock %}
+
+{% block body %}
+    <style>
+        .content-container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            font-family: sans-serif;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+        .header p {
+            margin: 0;
+            color: #666;
+        }
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+        }
+        .service-card {
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card h2 {
+            margin-top: 0;
+            color: #444;
+        }
+        .service-card p {
+            color: #666;
+        }
+        .styled-link {
+            display: inline-block;
+            margin-top: 2em;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .styled-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="content-container">
+        <div class="header">
+            <h1>Unsere Services</h1>
+            <p>Professionelle Lösungen für Ihr digitales Wachstum</p>
+        </div>
+        <div class="services-list">
+            <div class="service-card">
+                <h2>Webdesign</h2>
+                <p>
+                    Wir entwerfen moderne, responsive und benutzerfreundliche Webseiten,
+                    die perfekt auf Ihre Anforderungen zugeschnitten sind.
+                </p>
+            </div>
+            <div class="service-card">
+                <h2>Suchmaschinenwerbung (SEA)</h2>
+                <p>
+                    Maximieren Sie Ihre Reichweite mit gezielten Google Ads-Kampagnen.
+                    Wir kümmern uns um Planung, Umsetzung und Optimierung.
+                </p>
+            </div>
+            <div class="service-card">
+                <h2>SEO & Analytics</h2>
+                <p>
+                    Optimieren Sie Ihre Website für Suchmaschinen und erhalten Sie
+                    Einblicke in das Nutzerverhalten durch detaillierte Analysen.
+                </p>
+            </div>
+            <div class="service-card">
+                <h2>Full-Stack Entwicklung</h2>
+                <p>
+                    Von Frontend bis Backend bieten wir maßgeschneiderte
+                    Softwarelösungen mit modernsten Technologien wie React,
+                    Java, und MongoDB.
+                </p>
+            </div>
+        </div>
+        <a href="/" class="styled-link">🔙 Zurück</a>
+    </div>
+{% endblock %}
